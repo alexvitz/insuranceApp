@@ -1,0 +1,160 @@
+.appBackground {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-image: url('https://s3-alpha-sig.figma.com/img/d18b/2ee3/983fa8a3281feb26bf92ed73b46bfe19?Expires=1696204800&Signature=o3-xvFPAkembngkzJcNvaQjd5vUsiSSMkcxWnmtG-4~IEwDvgEqD5EKEnRzL6uF72QO2iIOIhGdmo89jlyabMmmLO5b8W3hclPAIQ93O6l2qbqEs1z7yKeCoJEbHhM8Rkurg3HlI86e9GoHRa~W6oF1Mq8e~SFgYjsLTcidaXc9rGSIwbHqKZqLgfiNxlP91MHyeuJ1ZWGQtDouHFJGa5m4o3AvurddD1fxEfJGCdEU~e4Rq9KwzeV0o2PfVtMzak89pnVTICaB7Mpie0Dp3Vsu8L7jhkDmSNSd-Lde7RRmQuhMEYiWC0cbn6WME~cbeXV3g6tZ4CORZyAU7Y~z8Uw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcomeContainer {
+  width: 40%;
+  text-align: center;
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+  background: rgba(56, 56, 56, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 35px;
+  padding: 20px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 20px;
+  margin: 15px;
+}
+
+.link:hover {
+  color: grey;
+}
+
+.loginContainer {
+  @extend .welcomeContainer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  outline: none;
+  border-radius: 35px;
+  margin: 5px 0 5px 0;
+  padding: 5px 0 5px 10px;
+  border: none;
+  width: 60%;
+}
+
+.button {
+  border: none;
+  background-color: rgba(204, 204, 204, 0.5);
+  border-radius: 35px;
+  color: black;
+  min-width: 15%;
+  max-width: fit-content;
+  font-size: 20px;
+  transition: transform 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
+
+.accountContainer {
+  @extend .welcomeContainer;
+  width: fit-content;
+  background-color: rgba(56, 56, 56, 0.8);
+  color: white;
+}
+
+.logoutBtn {
+  @extend .button;
+  background-color: rgba(56, 56, 56, 0.5);
+  width: 10%;
+  margin-top: 0;
+  color: white;
+}
+
+.custom-select {
+  position: relative;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 35px;
+  text-align: center;
+  width: 15%;
+  transition: transform 0.2s;
+}
+
+.custom-select:hover {
+  transform: scale(1.2);
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.sendFormBtn {
+  @extend .button;
+  margin-right: 15px;
+  padding: 0 10px 0 10px;
+}
+
+.closeBtn {
+  @extend .button;
+  background-color: rgba(56, 56, 56, 0.5);
+  width: 15%;
+  color: white;
+}
+
+table th {
+  border-right: 1px solid;
+  padding: 0 4px 0 4px;
+}
+
+.viewOffersBtn {
+  @extend .button;
+  font-size: 15px;
+  margin-right: 0;
+}
+
+.Modal {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  background-color: rgba(56, 56, 56, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 50%;
+  border-radius: 35px;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+}
+
+.companyOffer {
+  font-size: 20px;
+}
+
+.priceOffer {
+  font-weight: bold;
+  font-size: 20px;
+}
